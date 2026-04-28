@@ -27,7 +27,8 @@ def handler(event, context):
 @bot.message_handler(commands=['start'])
 def start_helper(message) -> None:
     start_message = "I'm a bot to organize events. Print /event EVENT NAME to create event\n"
-    bot.send_message(message.chat.id, start_message)
+    message_tread_id = 9120
+    bot.send_message(message.chat.id, message_tread_id, start_message)
 
 
 # Help
